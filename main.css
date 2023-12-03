@@ -1,0 +1,113 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    background: lightcyan;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.create-todo #todoText {
+    background-color: #ffffff;
+    padding: 1.8em 1.25em;
+    border-radius: 0.75em;
+    width: 25em;
+    height: 2em;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.create-todo button {
+    color: white;
+    width: 12em;
+    height: 2em;
+    margin: 1em 0em;
+    font-weight: bold;
+}
+
+.create-todo button.submit {
+    background: green;
+}
+
+.create-todo button.removeAll {
+    background: red;
+}
+
+.create-todo label {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.create-todo select {
+    margin-bottom: 1em;
+    width: 10em
+}
+
+.create-todo input[type="date"] {
+    margin-bottom: 1em;
+}
+
+
+.present-todo label.sortby {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.present-todo label.orderby {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.present-todo div.todo {
+    background-color: #ffffff;
+    padding: 0.5em 1.8em 5em 1.8em;
+    border-radius: 0.75em;
+    position: inherit;
+    width: 33em;
+    justify-content: center;
+    margin: 0 auto 0.5em auto;
+    height: 1.5em;
+    color: black;
+
+}
+
+.present-todo div.todo input[type="text"].todoText {
+    width: 25em;
+    border-width: 0 0 2px 0;
+    border-bottom: 2px solid navy;
+}
+
+.present-todo div.todo input[type="text"].dates {
+    color: darkgrey;
+    font-size: x-small;
+    font-style: italic;
+    border-width: 0 0 0 0;
+    width: 33em;
+    justify-content: left;
+}
+
+.present-todo div.todo input[type="text"].show-category {
+    width: 10em;
+    border-width: 0 0 0 0;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 1.8em 0.5em 1.8em;
+}
+
+.strike {
+    text-decoration: line-through;
+}

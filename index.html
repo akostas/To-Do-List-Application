@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>To-Do List Application</h1>
+    <title>To-Do</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Section where the todos will be created -->
+        <section class="create-todo">
+            <!-- Text form where the new tasks will be logged -->
+            <form class="inputText">
+                <input id="todoText" type="text" placeholder="e.g. Finish the Workearly Project" />
+
+            </form>
+            <!-- Date form for due date -->
+            <form class="dueDate">
+                <label>Due Date:</label>
+                <input type="date" id="duedate" />
+            </form>
+            <!-- Form in which the categories will be selected (or new will be 
+                created) -->
+            <form class="categories">
+                <label>Select a Category:</label>
+                <select id="todo-category" name="todo-categories">
+                    <option value="0">Personal</option>
+                    <option value="1">Business</option>
+                    <option value="2">Activities</option>
+                    <option value="3">Health</option>
+                    <option value="4">Other</option>
+                </select>
+                <!-- Create a new category 
+                <input type="submit" value="Create a new category">
+                -->
+            </form>
+            <button class="submit" id="submit">Add To-Do</button>
+            <button class="removeAll" id="removeAll">Remove All To-Dos</button>
+
+        </section>
+        <!-- Section where the todos will be presented -->
+        <section class="present-todo">
+            <h2>Current To-Do List</h2>
+            <div>
+                <form class="sorting" style="display: none" id="sortform">
+                    <label class="sortby">Sort by:</label>
+                    <input type="radio" name="sorting" id="byCreationDate" value=0 checked="checked">
+                    <label for="byCreationDate">Creation Date</label>
+                    <input type="radio" name="sorting" id="byDueDate" value=1>
+                    <label for="byDueDate">Due Date</label>
+                    <input type="radio" name="sorting" id="byCompletionStatus" value=2>
+                    <label for="byCompletionStatus">Completion Status</label>
+                    <br>
+                    <!-- Sorting order -->
+                    <label class="orderby">Order:</label>
+                    <input type="radio" name="order" id="ascending" value=0 checked="checked">
+                    <label for="ascending">Ascending</label>
+                    <input type="radio" name="order" id="descending" value=1>
+                    <label for="descending">Descending</label>
+                </form>
+            </div>
+            <br>
+            <div class="list-todo" id="todoList"></div>
+        </section>
+        <!-- Javascript script -->
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
